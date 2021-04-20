@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <style>
-          container {
-  height: auto;
+<head>
+    <title>
+        MyGoogleHomepage
+    </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+
+    <style>
+
+         ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 3px solid white;
+}
+
+li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  
+}
+a 
+    { 
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  
+}
+
+.button {
+  background-color: rgb(248, 249, 250);
+  border: 2px solid transparent;
+  border-radius: 7px;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+
+  
+} 
+.button:hover {
+  
+    cursor: pointer;
+    border: 2px groove rgba(219, 218, 218, 0.555);
+}
+
+.container {
+  height: 90px;
   position: relative;
   
 }
@@ -12,48 +75,77 @@
 .center {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 31%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-          
-        </style>
 
-        <title>GoogleHome</title>
-    </head>
-<header>
-    <a style="font-size: small;" href="#">Gmail Görseller</a>
+}
+.gray-area {
+    position: absolute;
+    margin: auto;
+    top: 85%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: rgb(248, 249, 250);
+    border-radius: 0px;
     
+  }
+
+    </style>
+
+</head>
+<header>
+    <ul>
+        <li style="float: right;"><a href="#">Profil</a></li>
+        <li style="float: right;"><a href="#">Uygulamalar</a></li>
+        <li style="float: right;"><a href="#">Görseller</a></li>
+        <li style="float: right;"><a href="#">Gmail</a></li>
+        
+            </ul>
 </header>
 <body>
-    <div class="container">
-        <div class="center">
-    <h1>
-        <a href="https://www.google.com/">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    
+    <a href="#">
+        <img class="center container" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
     </a>
-    </h1>
-    <h2>
-        <input style="border-radius: 25px; width: 60%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box; " type="text">
-    </h2>
-    <h3>
-        <button >Google'da Ara</button>
-        <button>Kendimi Şanslı Hissediyorum</button>
-    </h3>
-    <h4>
-        <p>Google'ı kullanabileceğiniz diğer diller:</p>
-        <a href="#">English</a>
 
-    </h4>
-</div>
-</div>
+    <div style="text-align:center; margin-top: 360px; ">
+        <input type="text" style="border-radius: 25px; height: 45px; width: 600px ;border-width: thin ;border-style: groove;"/>
+    </div>
+    <div style="text-align: center; padding: 15px 10px;">
+    <button class="button">Google'da Ara</button>
+    <button class="button">Kendimi Şanslı Hissediyorum</button>
+    </div>
+    <p style="font-size: 12px; text-align: center; padding: 10px 100px; margin-bottom: 280px">Google'ı kullanabileceğiniz diğer diller:  <a href="#">English</a></p>
 </body>
 <footer>
-    Türkiye
-</footer>
+    <div class="gray-area">
 
+        
+    
+
+    <ul style="display: block; font-size: 15px;background-color: rgb(242, 242, 242);">
+        <li><p style="border-bottom: 1px solid rgba(128, 128, 128, 0.300); padding: 8px; color: rgb(83, 83, 83, 0.750);">Türkiye</p></li>
+        <li><a style="font-size: 15px; color: rgb(83, 83, 83, 0.750); text-align: center; padding-bottom: 10px;" href="#";>2007'den bugüne karbon nötr</a></li>
+        
+           
+        <li style="float: left;"><a href="#" style="font-size: 15px; color: rgba(83, 83, 83, 0.750);">Hakkında</a></li>
+        <li style="float: left;"><a href="#" style="font-size: 15px; color: rgb(83, 83, 83, 0.750);">Reklam</a></li>
+        <li style="float: left;"><a href="#" style="font-size: 15px; color: rgb(83, 83, 83, 0.750);">İşletme</a></li>
+        <li style="float: left;"><a href="#" style="font-size: 15px; color: rgb(83, 83, 83, 0.750);">Arama nasıl çalışır?</a></li>
+        <li style="float: right;"><a href="#" style="font-size: 15px; color: rgb(83, 83, 83, 0.750);">Ayarlar</a></li>
+        <li style="float: right;"><a href="#" style="font-size: 15px; color: rgb(83, 83, 83, 0.750);">Şartlar</a></li>
+        <li style="float: right;"><a href="https://policies.google.com/privacy?hl=tr&fg=1" style="font-size: 15px; color: rgb(83, 83, 83, 0.750);">Gizlilik</a></li>
+                
+                    
+
+       
+        
+    </ul>
+</div>
+</footer>
 </html>
